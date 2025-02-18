@@ -27,6 +27,7 @@ This project is an end-to-end pipeline for analyzing social media sentiment usin
 
 ## Project Structure
 
+```
 social-media-sentiment-dashboard/
 ├── data/
 │   ├── raw/                    # Raw tweet data (not shared publicly)
@@ -43,7 +44,7 @@ social-media-sentiment-dashboard/
 │   └── style.css               # Custom CSS for dashboard styling
 ├── .gitignore                  # Files and folders to ignore in Git (e.g., raw data, virtual env)
 └── README.md                   # This documentation file
-
+```
 
 ## How to Run
 
@@ -56,7 +57,9 @@ git clone https://github.com/yourusername/social-media-sentiment-dashboard.git
 cd social-media-sentiment-dashboard
 python -m venv venv
 ```
+
 Activate the virtual environment:
+
 On macOS/Linux:
 ```bash
 source venv/bin/activate
@@ -66,16 +69,8 @@ On Windows:
 ```bash
 venv\Scripts\activate
 ```
-## Dependencies
 
-- Python 3.8+
-- [Streamlit](https://streamlit.io/)
-- [Plotly](https://plotly.com/python/)
-- [Pandas](https://pandas.pydata.org/)
-- [NLTK](https://www.nltk.org/)
-- [spaCy](https://spacy.io/)
-- [gensim](https://radimrehurek.com/gensim/)
-- [statsmodels](https://www.statsmodels.org/)
+### 2. Install Dependencies
 
 All dependencies are listed in `requirements.txt`.
 
@@ -90,12 +85,15 @@ python -m spacy download en_core_web_sm
 python -c "import nltk; nltk.download('vader_lexicon'); nltk.download('stopwords')"
 ```
 
-2. Data Preprocessing
+### 3. Data Preprocessing
+
 Run the preprocessing script to clean the raw tweets and extract keywords:
 ```bash
 python src/preprocessing.py
 ```
-3. Run NLP Pipelines
+
+### 4. Run NLP Pipelines
+
 Run the sentiment analysis, NER, and topic modeling scripts to process the cleaned tweets:
 ```bash
 python src/nlp/sentiment_analysis.py
@@ -103,40 +101,51 @@ python src/nlp/ner.py
 python src/nlp/topic_modeling_integration.py
 ```
 
-4.Merge Datasets
+### 5. Merge Datasets
+
 If you wish to combine all processed data into a single master file, run:
 ```bash
 python src/merge_datasets.py
 ```
-This will create a tweets_master.csv in data/processed/ containing all the information.
+This will create a `tweets_master.csv` in `data/processed/` containing all the information.
 
-5. Launch the Dashboard
+### 6. Launch the Dashboard
+
 Finally, run the Streamlit dashboard:
 ```bash
 streamlit run src/dashboard.py
 ```
-Data Privacy
+
+## Data Privacy
+
 Due to Twitter’s policies and privacy considerations, raw tweet data is not shared publicly. Only processed data (with anonymized or aggregated content) is provided in this project. If you wish to run the project yourself, you can collect your own data using Twitter's API.
 
-Customization
-Theming:
-Modify the .streamlit/config.toml file and src/style.css to change the color scheme and overall styling.
+## Customization
 
-Filters & Visualizations:
-The dashboard is modular, so you can add or remove filters and charts by editing src/dashboard.py and src/visualization.py.
+### Theming
 
-License
+Modify the `.streamlit/config.toml` file and `src/style.css` to change the color scheme and overall styling.
+
+### Filters & Visualizations
+
+The dashboard is modular, so you can add or remove filters and charts by editing `src/dashboard.py` and `src/visualization.py`.
+
+## License
+
 MIT License
+
 This project is licensed under the MIT License. See below for details.
-Copyright (c) 2025 Agit Yesiloz
+
+```
+MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-]
+```
 
-Acknowledgements
-This project uses spaCy, gensim, NLTK, and Streamlit.
-Data is collected via Twitter’s API
+## Acknowledgements
+
+This project uses spaCy, gensim, NLTK, and Streamlit. Data is collected via Twitter’s API.

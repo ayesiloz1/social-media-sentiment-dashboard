@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import matplotlib.patheffects as path_effects
 
 # Example tweets
-raw_tweet = "RT @user: Check out this amazing blog post! https://example.com #awesome #blog 😊"
-cleaned_tweet = "Check out this amazing blog post! #awesome #blog"
+raw_tweet = "Love, Hurts. A shot from the Eagles Championship Parade #Philadelphia #PhiladelphiaEagles https://t.co/dSo84bZrFO"   
+cleaned_tweet = "love, hurts. a shot from the eagles championship parade #philadelphia #philadelphiaeagles" 
 
 # 1. Create side-by-side subplots
 fig, (ax_left, ax_right) = plt.subplots(ncols=2, figsize=(14, 5))

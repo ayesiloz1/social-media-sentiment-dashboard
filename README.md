@@ -6,8 +6,8 @@ This project is an end-to-end pipeline for analyzing social media sentiment usin
 
 - **Data Preprocessing:**  
   Cleans raw tweets by removing URLs, retweet indicators, mentions, emojis, and extra whitespace. Also extracts keywords (hashtags) from tweets.
-  
-![Before&After](images/tweet_preprocessing_visualization.png)
+
+    ![Before&After](images/tweet_preprocessing_visualization.png)
    
 - **Sentiment Analysis:**  
   Uses NLTK VADER and TextBlob to analyze tweet sentiment. Creates numeric sentiment scores and discrete labels (positive, neutral, negative).

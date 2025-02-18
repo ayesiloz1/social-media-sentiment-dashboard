@@ -91,6 +91,7 @@ Run the preprocessing script to clean the raw tweets and extract keywords:
 ```bash
 python src/preprocessing.py
 ```
+![Before&After](images/tweet_preprocessing_visualization.png)
 
 ### 4. Run NLP Pipelines
 

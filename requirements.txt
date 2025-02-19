@@ -7,3 +7,4 @@ textblob==0.17.1
 gensim>=4.0.0,<5.0.0
 plotly>=5.0.0
 streamlit>=1.0.0,<2.0.0
+statsmodel==0.14.4

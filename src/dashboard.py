@@ -26,7 +26,9 @@ def main():
     # Load the master CSV (ensure it has the columns: id, text, created_at, author_id, etc.)
     data_path = "data/processed/tweets_master.csv"
     st.markdown(f"**Data Source:** `{data_path}`")
-    
+    df = pd.read_csv("data/processed/tweets_master.csv")
+    print(df.columns)
+
     try:
         df = pd.read_csv(data_path)
     except FileNotFoundError:

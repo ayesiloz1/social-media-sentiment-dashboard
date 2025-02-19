@@ -12,11 +12,17 @@ This project is an end-to-end pipeline for analyzing social media sentiment usin
 - **Sentiment Analysis:**  
   Uses NLTK VADER and TextBlob to analyze tweet sentiment. Creates numeric sentiment scores and discrete labels (positive, neutral, negative).
 
+    ![Sentiment Analysis Charts](images/Sentiment Distribution.png)
+
 - **Named Entity Recognition (NER):**  
   Uses spaCy to extract named entities from tweet text, allowing analysis of frequently mentioned organizations, people, or locations.
 
+  ![Entity Frequency](images/Entity Frequency.png)
+    
 - **Topic Modeling:**  
   Implements Latent Dirichlet Allocation (LDA) via gensim to automatically cluster tweets into topics.
+
+  ![Topic Distribution](images/topic_distribution.png)
 
 - **Interactive Dashboard:**  
   A Streamlit dashboard with multiple interactive Plotly visualizations, including:

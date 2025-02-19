@@ -32,7 +32,7 @@ This project is an end-to-end pipeline for analyzing social media sentiment usin
   - Topic distribution
 ## Dashboard Demo
 
-  [![Demo Video](images/video_thumbnail.png)](https://youtu.be/ZFNfYhIC2qc)
+  [![Demo Video](images/Entity_Frequency.png)](https://youtu.be/ZFNfYhIC2qc)
 
 ## Project Structure
 

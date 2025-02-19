@@ -30,7 +30,9 @@ This project is an end-to-end pipeline for analyzing social media sentiment usin
   - Keyword frequency
   - Entity frequency
   - Topic distribution
+## Dashboard Demo
 
+  ![View MP4](images/Dashboard_demo.mp4)
 ## Project Structure
 
 ```
